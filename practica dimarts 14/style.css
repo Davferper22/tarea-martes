@@ -1,0 +1,58 @@
+body{
+    background-color: lightblue;
+}
+
+h1.Steve{
+    color: blue;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div.links{
+    text-align: center;
+    color: blue;
+}
+
+p.linea::first-line{
+    color: red;
+}
+
+p.linea::before{
+    content: counter(cuenta-linea) " . ";
+    counter-increment: cuenta-linea ;
+}
+
+a.Vida:hover{
+    background-color: yellow;
+    color: red;
+}
+
+a.links1{
+background-color: white;
+color: blue;
+}
+
+a.links1:visited{
+    background-color:blue;
+    color:white;
+    
+}
+
+p.product::before {
+    content: counter(cuenta-product) ". ";
+    counter-increment: cuenta-product;
+}
+
+footer.footer{
+    font-style: italic;
+}
+
+div.product{
+        counter-reset: cuenta-product;
+}
+
+img {
+    float: right;
+    top: -390px;
+    position: relative;
+}
